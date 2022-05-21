@@ -59,46 +59,29 @@ nav .button .register{
 header {
     height: 100vh;
 }
-  
 .container {
-/* hide fixed overflow contents */
     clip: rect(0, auto, auto, 0);
-  
-/* does not work if overflow = visible */
     overflow: hidden;
-  
-/* only works with absolute positioning */
     position: absolute;
-  
-/* Make sure containers are full-width and height */
     height: 100vh;
     left: 0;
     width: 100%;
-    
-    
-/* safari hack */
     -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
-  }
-  
+}
 .container_solid {
     background: white;
-    
-/* position this container at the top of its parent element */
     top: 0;
 }
-  
 .title_wrapper {
     position: fixed;
     display: block;  
     margin: auto;
     width: 100%;
-/* center the text wrapper vertically */
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
 }
-  
 .title_wrapper h1 {
     text-align: center;
     font-size: 128px;
@@ -106,52 +89,47 @@ header {
     text-align: center;
     font-weight: 900;
 }
-  
 .container_solid .title_wrapper h1 {
-/* the text background */
     background: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg);
     background-size: 100vw auto;
     background-position: center;
-    
-/* clip the text is possible */
     text-decoration-color: transparent;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    
-/* fallback text color */
     color: black;
 }
-  
 .container_image {
-/* Grab a free image from unsplash */
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg);
     background-size:100vw auto;
     background-position: center;
     background-attachment: fixed;
-    
-/* position the second container below the first container */
     top: 100vh;
 }
-  
 .container_image .title_wrapper h1 {
     color: white;
 }
-  
 section {
     min-height: 100vh;
     padding: 2em;
     margin: auto;
     max-width: 800px;
 }
-section img.AVELogo{
-    margin-left: 160px;
-}
-section h2 {
-    font-size: 150px;
-    color: #5271ff;
-    margin-left: 275px;
-    margin-top: 0%;
-}
-
 /* Fin du Header */
+
+/* Pied de page */
+footer{
+    padding-top: 550px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/af/Waves_AVE.png);
+    background-size: cover;
+    background-position: center;
+    top: 100vh;
+}
+.Textfooter1{
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+/* Fin du Pied de page */
