@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap');
+body{
+    font-family: 'League Spartan', sans-serif;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    color: #141414;
+}
+body .page{
+    margin: 0px 80px;
+}
+/* Barre de Navigation */
+nav{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding-top: 13px;
+}
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+nav .onglets a{
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #141414;
+}
+nav .onglets a.Reception{
+    margin-left: 15px;
+}
+nav .button button{
+    padding: 13px 20px;
+    color: #141414;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+nav .button .login{
+    background-color: inherit;
+    margin-right: 10px;
+    color: #141414;
+}
+nav .button .register{
+    background-color: #5271ff;
+    margin-right: 10px;
+    color: #141414;
+}
+/* Fin de la Barre de Navigation */
+
+/* Header */
+header {
+    height: 100vh;
+}
+  
+.container {
+/* hide fixed overflow contents */
+    clip: rect(0, auto, auto, 0);
+  
+/* does not work if overflow = visible */
+    overflow: hidden;
+  
+/* only works with absolute positioning */
+    position: absolute;
+  
+/* Make sure containers are full-width and height */
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    
+    
+/* safari hack */
+    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+  }
+  
+.container_solid {
+    background: white;
+    
+/* position this container at the top of its parent element */
+    top: 0;
+}
+  
+.title_wrapper {
+    position: fixed;
+    display: block;  
+    margin: auto;
+    width: 100%;
+/* center the text wrapper vertically */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+  
+.title_wrapper h1 {
+    text-align: center;
+    font-size: 128px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+}
+  
+.container_solid .title_wrapper h1 {
+/* the text background */
+    background: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg);
+    background-size: 100vw auto;
+    background-position: center;
+    
+/* clip the text is possible */
+    text-decoration-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+/* fallback text color */
+    color: black;
+}
+  
+.container_image {
+/* Grab a free image from unsplash */
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg);
+    background-size:100vw auto;
+    background-position: center;
+    background-attachment: fixed;
+    
+/* position the second container below the first container */
+    top: 100vh;
+}
+  
+.container_image .title_wrapper h1 {
+    color: white;
+}
+  
+section {
+    min-height: 100vh;
+    padding: 2em;
+    margin: auto;
+    max-width: 800px;
+}
+section img.AVELogo{
+    margin-left: 160px;
+}
+section h2 {
+    font-size: 150px;
+    color: #5271ff;
+    margin-left: 275px;
+    margin-top: 0%;
+}
+
+/* Fin du Header */
