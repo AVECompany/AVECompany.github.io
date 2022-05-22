@@ -34,6 +34,11 @@ nav .onglets a{
 nav .onglets a.Reception{
     margin-left: 15px;
 }
+nav img.Logo{
+    margin-right: 40px;
+    width: 50px;
+    height: 50px;
+}
 nav .button button{
     padding: 13px 20px;
     color: #141414;
@@ -51,7 +56,7 @@ nav .button .login{
 nav .button .register{
     background-color: #5271ff;
     margin-right: 10px;
-    color: #141414;
+    color: #000000;
 }
 /* Fin de la Barre de Navigation */
 
