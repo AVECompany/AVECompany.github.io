@@ -71,7 +71,7 @@ header {
     height: 100vh;
     left: 0;
     width: 100%;
-    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+    mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
 }
 .container_solid {
     background: white;
