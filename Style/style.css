@@ -9,6 +9,9 @@ body{
 body .page{
     margin: 0px 80px;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* Barre de Navigation */
 nav{
     font-size: 20px;
@@ -94,7 +97,23 @@ header {
     text-align: center;
     font-weight: 900;
 }
+.title_wrapper h2 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
 .container_solid .title_wrapper h1 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg);
+    background-size: 100vw auto;
+    background-position: center;
+    text-decoration-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: black;
+}
+.container_solid .title_wrapper h2 {
     background: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg);
     background-size: 100vw auto;
     background-position: center;
@@ -106,12 +125,14 @@ header {
 }
 .container_image {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/Glorious-blue-mountain-range.jpg);
-    background-size:100vw auto;
     background-position: center;
     background-attachment: fixed;
     top: 100vh;
 }
 .container_image .title_wrapper h1 {
+    color: white;
+}
+.container_image .title_wrapper h2 {
     color: white;
 }
 section {
@@ -138,3 +159,37 @@ footer{
     color: #ffffff;
 }
 /* Fin du Pied de page */
+
+/* Format mobile */
+@media screen  and (max-width: 854px){
+    nav .onglets{
+        display: none;
+    }
+    nav img.logo{
+        margin-right: 0px;
+    }
+}
+@media screen  and (max-width: 456px){
+    nav div.button{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav img.Logo{
+        margin-right: 0px;
+    }
+}
+@media screen  and (max-width: 362px){
+    nav div.button button.register{
+        margin-right: 0px;
+    }
+    nav div.button button.login{
+        margin-right: 10px;
+    }
+}
+@media screen  and (max-width: 280px){
+    nav div.button{
+        display: none;
+    }
+}
+/* Fin du format mobile */
